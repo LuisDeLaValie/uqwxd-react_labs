@@ -95,12 +95,14 @@ const App = () => {
   }, [todos]);
 
   return (
-    <div className="App">
+    <div className="App ">
+      <div className="cristal">
       <h1>Todo List</h1>
       <form onSubmit={handleSubmit}>
         <input type="text" align="right" id='todoAdd' />
         <button type="submit">Add Todo</button>
       </form>
+<div className="lista">
 
       {todos.map((todo) => (
         <div key={todo.id} className="todo">
@@ -135,7 +137,10 @@ const App = () => {
           </div>
         </div>
       ))}
+</div>
     </div>
+
+      </div>
   );
 };
 export default App;
